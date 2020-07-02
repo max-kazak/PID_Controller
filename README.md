@@ -17,8 +17,11 @@ PID controller has following components that affect changes in steering angle:
 ## Choosing the coefficients 
 
 Kp, Ki, Kd coefficients for corresponding components were chosen manually through tries and errors. 
+
 Ki component was left as zero since simulator doesn't have systematic bias. 
+
 First, I tried different Kp components (leaving Ki and Kd zero). My goal was to find coefficient that would set steering angle big enough to pass turns. 
+
 Then I added Kd coefficient to eliminate oversteering. The goal was to choose the value that would allow car to approach center more gradually. 
 
 # Build Instructions
